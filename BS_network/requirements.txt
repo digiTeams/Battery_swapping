@@ -1,0 +1,16 @@
+numpy>=1.24
+pandas>=2.0
+scipy>=1.11
+torch>=2.0
+matplotlib>=3.7
+# Network construction and map rendering (network/set_networks.py, common/network_maps.py).
+folium>=0.14
+geopandas>=0.14
+shapely>=2.0
+# Required licensed solver for the joint BMIP and subsidy LP.
+gurobipy>=12
+# Alternative licensed backend (Cardinal Optimizer / COPT):
+#   pip install coptpy   (a COPT license is required to solve)
+# coptpy>=8.0  (API verified against coptpy 8.0.6)
+# Both backends are imported defensively and auto-detected at startup, so only the
+# one you use needs to be installed.
